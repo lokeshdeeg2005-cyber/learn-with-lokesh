@@ -9,8 +9,8 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4">Lokesh Bansal Tuition Classes</h3>
             <p className="text-primary-light leading-relaxed">
-              Providing quality education and personalized attention to help students 
-              achieve their academic goals since 2018.
+              Dedicated to providing quality education and personalized attention to help students 
+              achieve their academic goals with fresh perspective and enthusiasm.
             </p>
           </div>
 
