@@ -21,8 +21,8 @@ const AboutSection = () => {
               <div>
                 <h3 className="text-2xl font-semibold mb-2">Hi, I'm Lokesh Bansal</h3>
                 <p className="text-muted-foreground text-lg leading-relaxed">
-                  A dedicated educator with over 5 years of experience in providing 
-                  personalized home tuitions. I specialize in creating a supportive 
+                  A passionate educator starting my journey in providing 
+                  personalized home tuitions. I am committed to creating a supportive 
                   learning environment that helps students excel academically.
                 </p>
               </div>
@@ -47,11 +47,11 @@ const AboutSection = () => {
                 <Award className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h4 className="text-xl font-semibold mb-2">Results</h4>
+                <h4 className="text-xl font-semibold mb-2">My Goal</h4>
                 <p className="text-muted-foreground leading-relaxed">
-                  My students consistently show remarkable improvement in their 
-                  academic performance, with 95% achieving their target grades 
-                  and gaining confidence in their studies.
+                  My goal is to help every student build confidence and achieve 
+                  their academic potential through personalized attention and 
+                  innovative teaching methods.
                 </p>
               </div>
             </div>
@@ -85,9 +85,9 @@ const AboutSection = () => {
 
             <div className="card-professional text-center">
               <Award className="w-12 h-12 text-primary mx-auto mb-4" />
-              <h4 className="text-lg font-semibold mb-2">Proven Success</h4>
+              <h4 className="text-lg font-semibold mb-2">Quality Focus</h4>
               <p className="text-muted-foreground text-sm">
-                Track record of consistent student improvement and success
+                Committed to delivering excellence and building student success
               </p>
             </div>
           </div>

@@ -58,18 +58,14 @@ const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
+        <div className="mt-16 grid grid-cols-2 gap-8 text-center">
           <div className="backdrop-blur-sm bg-white/10 rounded-lg p-4">
-            <div className="text-3xl font-bold text-accent">5+</div>
-            <div className="text-sm opacity-90">Years Experience</div>
+            <div className="text-3xl font-bold text-accent">Fresh</div>
+            <div className="text-sm opacity-90">Start & Passion</div>
           </div>
           <div className="backdrop-blur-sm bg-white/10 rounded-lg p-4">
-            <div className="text-3xl font-bold text-accent">100+</div>
-            <div className="text-sm opacity-90">Students Taught</div>
-          </div>
-          <div className="backdrop-blur-sm bg-white/10 rounded-lg p-4 col-span-2 md:col-span-1">
-            <div className="text-3xl font-bold text-accent">95%</div>
-            <div className="text-sm opacity-90">Success Rate</div>
+            <div className="text-3xl font-bold text-accent">100%</div>
+            <div className="text-sm opacity-90">Dedication</div>
           </div>
         </div>
       </div>
