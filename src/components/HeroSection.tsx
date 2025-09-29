@@ -1,4 +1,5 @@
 import heroImage from "@/assets/hero-education.jpg";
+import heroImageMobile from "@/assets/hero-education-mobile.jpg";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -13,10 +14,17 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
+        {/* Desktop Background */}
         <img 
           src={heroImage} 
           alt="Professional education environment" 
-          className="w-full h-full object-cover"
+          className="hidden md:block w-full h-full object-cover"
+        />
+        {/* Mobile Background */}
+        <img 
+          src={heroImageMobile} 
+          alt="Professional education environment" 
+          className="block md:hidden w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/70 to-secondary/80"></div>
       </div>
