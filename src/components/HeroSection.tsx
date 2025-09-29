@@ -1,5 +1,6 @@
 import heroImage from "@/assets/hero-education.jpg";
 import heroImageMobile from "@/assets/hero-education-mobile.jpg";
+import heroImageTablet from "@/assets/hero-education-tablet.jpg";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -18,13 +19,19 @@ const HeroSection = () => {
         <img 
           src={heroImage} 
           alt="Professional education environment" 
-          className="hidden md:block w-full h-full object-cover object-center"
+          className="hidden lg:block w-full h-full object-cover object-center"
         />
-        {/* Mobile and Tablet Background */}
+        {/* Tablet Background */}
+        <img 
+          src={heroImageTablet} 
+          alt="Professional education environment" 
+          className="hidden md:block lg:hidden w-full h-full object-cover object-center"
+        />
+        {/* Mobile Background */}
         <img 
           src={heroImageMobile} 
           alt="Professional education environment" 
-          className="block md:hidden w-full h-full object-contain object-center bg-primary/20"
+          className="block md:hidden w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/70 to-secondary/80"></div>
       </div>
