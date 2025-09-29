@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         {/* Desktop Background */}
@@ -20,11 +20,11 @@ const HeroSection = () => {
           alt="Professional education environment" 
           className="hidden md:block w-full h-full object-cover object-center"
         />
-        {/* Mobile Background */}
+        {/* Mobile and Tablet Background */}
         <img 
           src={heroImageMobile} 
           alt="Professional education environment" 
-          className="block md:hidden w-full h-full object-cover object-center"
+          className="block md:hidden w-full h-full object-contain object-center bg-primary/20"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/70 to-secondary/80"></div>
       </div>
