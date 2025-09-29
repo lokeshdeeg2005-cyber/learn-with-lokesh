@@ -38,7 +38,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-relaxed">
           <span className="block">Lokesh Bansal</span>
           <span className="block text-accent">Tuition Classes</span>
         </h1>
