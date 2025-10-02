@@ -12,33 +12,33 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen min-h-[100dvh] flex items-center justify-center overflow-x-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary to-secondary">
         {/* Desktop Background */}
         <img 
           src={heroImage} 
           alt="Professional education environment" 
-          className="hidden lg:block w-full h-full object-cover object-center"
+          className="hidden lg:block w-full h-full object-contain object-center"
         />
         {/* Tablet Background */}
         <img 
           src={heroImageTablet} 
           alt="Professional education environment" 
-          className="hidden md:block lg:hidden w-full h-full object-cover object-center"
+          className="hidden md:block lg:hidden w-full h-full object-contain object-center"
         />
         {/* Mobile Background */}
         <img 
           src={heroImageMobile} 
           alt="Professional education environment" 
-          className="block md:hidden w-full h-full object-cover object-center"
+          className="block md:hidden w-full h-full object-contain object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/70 to-secondary/80"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-relaxed">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto pt-24 md:pt-28">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
           <span className="block">Lokesh Bansal</span>
           <span className="block text-accent">Tuition Classes</span>
         </h1>
@@ -73,7 +73,7 @@ const HeroSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="mt-12 mb-16 grid grid-cols-2 gap-8 text-center">
+        <div className="mt-12 mb-16 grid grid-cols-2 gap-8 text-center relative">
           <div className="backdrop-blur-sm bg-white/10 rounded-lg p-4">
             <div className="text-3xl font-bold text-accent">Fresh</div>
             <div className="text-sm opacity-90">Start & Passion</div>
@@ -82,15 +82,16 @@ const HeroSection = () => {
             <div className="text-3xl font-bold text-accent">100%</div>
             <div className="text-sm opacity-90">Dedication</div>
           </div>
+
+          {/* Scroll indicator positioned between stats (grid-centered) */}
+          <div className="col-span-2 flex justify-center -mt-6 z-20 pointer-events-none">
+            <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center animate-bounce">
+              <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-4 md:bottom-6 lg:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
-        </div>
-      </div>
     </section>
   );
 };
